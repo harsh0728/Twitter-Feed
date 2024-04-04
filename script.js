@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inserting custom text into the textarea
   var textarea = document.querySelector('[data-testid="tweetTextarea_0"]');
   if (textarea) {
-    var customText = "Your custom text here.";
+    var customText = pageTitle || "Your custom text here.";
     var textNode = document.createTextNode(customText);
     textarea.appendChild(textNode);
   }
